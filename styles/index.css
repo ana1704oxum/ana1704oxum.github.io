@@ -85,7 +85,6 @@ h1 {
 
 .link a:hover {
   color: #ffc2ec;
-  background-color: #bb6ca2;
 }
 
 .introducao {
@@ -149,18 +148,19 @@ h1 {
 
 .sobre p {
   font-weight: 500;
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   text-align: center;
   max-width: 750px;
 }
 
 .experiencia {
-  background: #fffafa url("../img/fundo/Experiencia.png") no-repeat center center;
+  background: #fffafa url("../img/fundo/Experiencia.png") no-repeat center
+    center;
 }
 
 .experiencia-content {
   display: grid;
-  grid-template-columns: .5fr 1fr;
+  grid-template-columns: 0.5fr 1fr;
   padding-block: 7.5rem;
 }
 
@@ -179,7 +179,7 @@ h1 {
 }
 
 .experiencia-dados > p {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   font-weight: 500;
   max-width: 500px;
   margin-bottom: 3.75rem;
@@ -188,7 +188,7 @@ h1 {
 .experiencia-empresa-dados {
   padding: 2rem;
   background-color: #fffafa;
-  border: 1px solid #380B2A;
+  border: 1px solid #380b2a;
   border-radius: 5px;
 }
 
@@ -211,7 +211,7 @@ h1 {
   font-family: "Limelight", serif;
   font-weight: 400;
   font-size: 2rem;
-  margin-top: .75rem;
+  margin-top: 0.75rem;
   margin-bottom: 1.125rem;
 }
 
@@ -221,12 +221,12 @@ h1 {
 }
 
 .habilidade {
-  background: #D990C2 url("../img/fundo/Habilidade.png") no-repeat center center;
+  background: #d990c2 url("../img/fundo/Habilidade.png") no-repeat center center;
 }
 
 .habilidade-content {
   display: grid;
-  grid-template-columns: .5fr 1fr;
+  grid-template-columns: 0.5fr 1fr;
   padding-block: 7.5rem;
 }
 
@@ -239,7 +239,7 @@ h1 {
 
 .habilidade-item {
   background-color: #fffafa;
-  border: 1px solid #380B2A;
+  border: 1px solid #380b2a;
   border-radius: 5px;
   grid-column: span 2;
 }
@@ -254,11 +254,180 @@ h1 {
   font-family: "Limelight", serif;
   font-weight: 400;
   font-size: 2rem;
-  outline: 1px solid #380B2A;
+  outline: 1px solid #380b2a;
   border-radius: 5px;
 }
 
 .habilidade-item p {
   font-size: 1.125rem;
   padding: 1.125rem 2rem 2rem 2rem;
+}
+
+.formacao {
+  background: #4a1339 url("../img/fundo/Formacao.png") no-repeat center center;
+}
+
+.cor-1 {
+  color: #d990c2;
+}
+
+.formacao-content {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  padding-block: 7.5rem;
+}
+
+.formacao-dados > p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  max-width: 500px;
+  margin-bottom: 3.75rem;
+}
+
+.formacao-list {
+  display: grid;
+  gap: 1.125rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3.75rem;
+}
+
+.formacao-item {
+  padding: 1.125rem;
+  outline: 1px solid #380b2a;
+  background-color: #fffafa;
+  border-radius: 5px;
+}
+
+.formacao-item small {
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.formacao-item h2 {
+  margin-bottom: 2rem;
+  font-family: "Limelight", serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+.formacao-item p {
+  font-size: 0.875rem;
+}
+
+.list-cur {
+  margin-bottom: 3.75rem;
+}
+
+.list-cur h5 {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.item-cur li + li {
+  margin-top: 1.125rem;
+}
+
+.item-cur li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.item-cur li small,
+.item-cur li p {
+  font-size: 0.875rem;
+}
+
+.list-idi h5 {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.item-idi li + li {
+  margin-top: 1.125rem;
+}
+
+.item-idi li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.list-idi h5 {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.item-idi p {
+  font-size: 0.875rem;
+}
+
+.item-idi span {
+  color: #bb6ca2;
+}
+
+.footer {
+  background-color: #380b2a;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 7.5rem;
+  padding-bottom: 3.75rem;
+  position: relative;
+}
+
+.footer-content > p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  max-width: 400px;
+  margin-bottom: 3.75rem;
+  color: #d990c2;
+  align-self: center;
+}
+
+.contato {
+  display: grid;
+  align-self: center;
+  gap: 1.875rem;
+}
+
+.contato .link {
+  display: grid;
+}
+
+.contato a {
+  color: #ffc2ec;
+  font-size: 2.25rem;
+  font-family: "Limelight", serif;
+  font-weight: 400;
+}
+
+.contato a:hover {
+  color: #7d3667;
+}
+
+.footer-content .copy {
+  color: #7d3667;
+  grid-column: 1 / 3;
+  font-size: 1.5rem;
+  align-self: end;
+  margin-top: 6.25rem;
+  margin-bottom: 0;
+}
+
+.footer-content::after {
+  content: "";
+  display: block;
+  width: 210px;
+  height: 100px;
+  background: url("../img/icon/AR.svg") no-repeat center;
+  position: absolute;
+  top: -55px;
+  left: 30px;
 }
