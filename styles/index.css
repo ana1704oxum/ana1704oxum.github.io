@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", serif;
@@ -84,7 +88,7 @@ h1 {
 }
 
 .link a:hover {
-  color: #ffc2ec;
+  color: #4C9A34;
 }
 
 @media (max-width: 50rem) {
@@ -137,6 +141,7 @@ h1 {
   font-family: "Roboto", serif;
   font-size: 1.125rem;
   font-weight: 500;
+  display: inline-block;
   border: none;
   background: linear-gradient(#4c9a34, #398023);
   color: #fffafa;
@@ -250,6 +255,19 @@ h1 {
 
 .experiencia-empresa-dados div p {
   font-size: 1.125rem;
+  position: relative;
+  margin-left: 11px;
+}
+
+.experiencia-empresa-dados div p::after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 8px;
+  background: linear-gradient(#4c9a34, #398023);
+  position: absolute;
+  top: 6px;
+  left: -11px;
 }
 
 .experiencia-empresa-dados div small {
@@ -409,10 +427,23 @@ h1 {
   font-family: "Limelight", serif;
   font-weight: 400;
   font-size: 1.125rem;
+  position: relative;
+  margin-left: 11px;
+}
+
+.formacao-item h2::after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 17px;
+  background: linear-gradient(#4c9a34, #398023);
+  position: absolute;
+  top: 0px;
+  left: -11px;
 }
 
 .formacao-item p {
-  font-size: 0.875rem;
+  font-size: 0.875rem; 
 }
 
 .list-cur {
@@ -422,6 +453,18 @@ h1 {
 .list-cur h5 {
   font-size: 1.125rem;
   font-weight: 500;
+  position: relative;
+}
+
+.list-cur h5::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("../img/icon/cursos.svg") no-repeat center;
+  position: absolute;
+  top: -2px;
+  left: -32px;
 }
 
 .item-cur li + li {
@@ -443,6 +486,7 @@ h1 {
 .list-idi h5 {
   font-size: 1.125rem;
   font-weight: 500;
+  position: relative;
 }
 
 .item-idi li + li {
@@ -456,9 +500,15 @@ h1 {
   gap: 0.5rem;
 }
 
-.list-idi h5 {
-  font-size: 1.125rem;
-  font-weight: 500;
+.list-idi h5::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("../img/icon/idiomas.svg") no-repeat center;
+  position: absolute;
+  top: -2px;
+  left: -32px;
 }
 
 .item-idi p {
@@ -474,6 +524,11 @@ h1 {
     font-size: 1.125rem;
     max-width: auto;
     margin-bottom: 1.875rem;
+  }
+
+  .list-idi h5,
+  .list-cur h5 {
+    margin-left: 32px;
   }
 
   .formacao-content {
@@ -526,7 +581,7 @@ h1 {
 }
 
 .contato a:hover {
-  color: #7d3667;
+  color: #4C9A34;
 }
 
 .footer-content .copy {
@@ -599,4 +654,26 @@ h1 {
   .text-decoretion-mobile {
     display: block;
   }
+}
+
+.js [data-anime] {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.js [data-anime='left'] {
+  transform: translate3d(-50px, 0, 0);
+}
+
+.js [data-anime='right'] {
+  transform: translate3d(50px, 0, 0);
+}
+
+.js [data-anime='top'] {
+  transform: translate3d(0, -50px, 0);
+}
+
+[data-anime].animate {
+  opacity: 1 !important;
+  transform: translate3d(0px, 0px, 0px);
 }

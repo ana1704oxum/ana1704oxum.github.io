@@ -11,6 +11,9 @@
       rel="stylesheet"
     />
     <title>Ana Roger</title>
+    <script>
+      document.documentElement.className += "js";
+    </script>
   </head>
   <body>
     <header class="header">
@@ -31,6 +34,9 @@
           <li class="link">
             <a href="#for">Formação</a>
           </li>
+          <li class="link">
+            <a href="#contato">Contato</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -38,22 +44,22 @@
     <main class="introducao">
       <div class="introducao-content container">
         <picture class="fadeInDown" data-anime="800">
-          <source media="(max-width: 800px)" />
+          <source media="(max-width: 800px)" data-anime='left' />
           <!-- srcset="./img/bicicletas/nimbus.jpg" -->
           <!-- src="./img/fotos/introducao.jpg" -->
-          <img width="1280" height="1600" alt="Ana Roger" />
+          <img width="1280" height="1600" alt="Ana Roger" data-anime='left' />
         </picture>
-        <div class="introducao-dados">
+        <div class="introducao-dados" data-anime='right'>
           <h1>Ana Roger</h1>
           <p>Publicidade & Marketing de conteúdo</p>
-          <button class="btn">Sobre mim</button>
+          <a class="btn" href="#sobre">Sobre mim</a>
         </div>
       </div>
     </main>
 
-    <article class="sobre">
-      <h1>Sobre mim.</h1>
-      <p>
+    <article class="sobre" id="sobre">
+      <h1 data-anime='top'>Sobre mim.</h1>
+      <p data-anime='top'>
         Olá! Sou Ana Beatriz, uma apaixonada por Publicidade e Propaganda, com
         21 anos e atualmente no segundo ano de curso. Há três anos, mergulhei no
         universo das redes sociais como Social Media, onde desenvolvo
@@ -61,22 +67,22 @@
       </p>
     </article>
 
-    <article class="experiencia">
+    <article class="experiencia" id="exp">
       <div class="experiencia-content container">
-        <h2 class="text-decoretion">
+        <h2 class="text-decoretion" data-anime='left'>
           Expe <br />
           rien <br />
           cia
         </h2>
-        <h2 class="text-decoretion-mobile">Experiencia</h2>
+        <h2 class="text-decoretion-mobile" data-anime='top'>Experiencia</h2>
         <div class="experiencia-dados">
-          <p>
+          <p data-anime='right'>
             Minha mais recente experiência acadêmica foi o mestrado que fiz no
             exterior em UX Design. Além disso me mantenho sempre atualizado com
             cursos intensivos online.
           </p>
           <ul class="experiencia-empresa">
-            <li class="experiencia-empresa-dados">
+            <li class="experiencia-empresa-dados" data-anime='right'>
               <div>
                 <p>05/2024 - atual</p>
                 <small>Estagio</small>
@@ -88,7 +94,7 @@
                 Dogs.
               </p>
             </li>
-            <li class="experiencia-empresa-dados">
+            <li class="experiencia-empresa-dados" data-anime='right'>
               <div>
                 <p>05/2024 - atual</p>
                 <small>Estagio</small>
@@ -105,16 +111,16 @@
       </div>
     </article>
 
-    <article class="habilidade">
+    <article class="habilidade" id="hab">
       <div class="habilidade-content container">
-        <h2 class="text-decoretion">
+        <h2 class="text-decoretion" data-anime='left'>
           Hab <br />
           ilid <br />
           ade
         </h2>
         <h2 class="text-decoretion-mobile">Habilidade</h2>
         <ul class="habilidade-list">
-          <li class="habilidade-item">
+          <li class="habilidade-item" data-anime='top'>
             <h4>Design Gráfico</h4>
             <p>
               Desenvolvo pequenosprojetos como o Bikcraft utilizando apenas
@@ -122,7 +128,7 @@
               Dogs.
             </p>
           </li>
-          <li class="habilidade-item">
+          <li class="habilidade-item" data-anime='top'>
             <h4>Roteirização</h4>
             <p>
               Desenvolvo pequenosprojetos como o Bikcraft utilizando apenas
@@ -130,7 +136,7 @@
               Dogs.
             </p>
           </li>
-          <li class="habilidade-item">
+          <li class="habilidade-item" data-anime='top'>
             <h4>Trabalho em Equipe</h4>
             <p>
               Desenvolvo pequenosprojetos como o Bikcraft utilizando apenas
@@ -138,7 +144,7 @@
               Dogs.
             </p>
           </li>
-          <li class="habilidade-item">
+          <li class="habilidade-item" data-anime='top'>
             <h4>Criação de Estratégia</h4>
             <p>
               Desenvolvo pequenosprojetos como o Bikcraft utilizando apenas
@@ -146,7 +152,7 @@
               Dogs.
             </p>
           </li>
-          <li class="habilidade-item">
+          <li class="habilidade-item" data-anime='top'>
             <h4>Relatórios</h4>
             <p>
               Desenvolvo pequenosprojetos como o Bikcraft utilizando apenas
@@ -158,8 +164,8 @@
       </div>
     </article>
 
-    <article class="formacao">
-      <div class="formacao-content container">
+    <article class="formacao" id="for">
+      <div class="formacao-content container" data-anime='right'>
         <h2 class="text-decoretion cor-1">
           For <br />
           maç <br />
@@ -223,13 +229,13 @@
       </div>
     </article>
 
-    <footer class="footer">
+    <footer class="footer" id="contato">
       <div class="footer-content container">
-        <p class="cor-1">
+        <p class="cor-1" data-anime='left'>
           Estou disponível para novos projetos no momento. Entre em contato
           comigo e marcamos uma coversa
         </p>
-        <div class="contato">
+        <div class="contato" data-anime='right'>
           <div class="link">
             <a href="#">Anaberoger@gmail.com</a>
             <a href="#">Agenciarogers@gmail.com</a>
