@@ -87,6 +87,23 @@ h1 {
   color: #ffc2ec;
 }
 
+@media (max-width: 50rem) {
+  .logo {
+    margin-top: 0.75rem;
+  }
+
+  .header-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .header-container .link a {
+    padding: 1rem 0.75rem;
+    display: block;
+    transition: 0.2s;
+  }
+}
+
 .introducao {
   background: #fffafa url("../img/fundo/Ana_Roger.png") no-repeat center center;
 }
@@ -132,6 +149,24 @@ h1 {
   background: linear-gradient(#1e5c0b, #114401);
 }
 
+@media (max-width: 50rem) {
+  .introducao-content {
+    grid-template-columns: 1fr;
+  }
+
+  .introducao-dados h1 {
+    font-size: 2rem;
+  }
+
+  .introducao-dados {
+    padding-block: 3.75rem;
+  }
+
+  .introducao-content img {
+    display: none;
+  }
+}
+
 .sobre {
   background-color: #d990c2;
   display: flex;
@@ -151,6 +186,21 @@ h1 {
   font-size: 1.5rem;
   text-align: center;
   max-width: 750px;
+}
+
+@media (max-width: 50rem) {
+  .sobre {
+    padding: 3.75rem 1.25rem;
+    min-height: auto;
+  }
+  .sobre h1 {
+    font-size: 2rem;
+  }
+
+  .sobre p {
+    font-size: 1.125rem;
+    max-width: auto;
+  }
 }
 
 .experiencia {
@@ -211,13 +261,41 @@ h1 {
   font-family: "Limelight", serif;
   font-weight: 400;
   font-size: 2rem;
-  margin-top: 0.75rem;
+  margin-top: 2.25rem;
   margin-bottom: 1.125rem;
 }
 
 .experiencia-empresa-dados > p {
   font-size: 1.125rem;
   max-width: 520px;
+}
+
+@media (max-width: 50rem) {
+  .experiencia-empresa-dados div p {
+    font-size: 0.875rem;
+  }
+
+  .experiencia-empresa-dados div small {
+    font-size: 0.875rem;
+  }
+
+  .experiencia-dados > p {
+    font-size: 1.125rem;
+    max-width: auto;
+    margin-bottom: 1.875rem;
+  }
+
+  .experiencia-empresa-dados > h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.875rem;
+    font-size: 1.8rem;
+  }
+
+  .experiencia-content {
+    grid-template-columns: 1fr;
+    padding-block: 3.75rem;
+    gap: 1.25rem;
+  }
 }
 
 .habilidade {
@@ -261,6 +339,27 @@ h1 {
 .habilidade-item p {
   font-size: 1.125rem;
   padding: 1.125rem 2rem 2rem 2rem;
+}
+
+@media (max-width: 50rem) {
+  .habilidade-content {
+    grid-template-columns: 1fr;
+    padding-block: 3.75rem;
+    gap: 1.25rem;
+  }
+
+  .habilidade-item h4 {
+    font-size: 1.8rem;
+  }
+
+  .habilidade-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .habilidade-item:nth-child(5) {
+    grid-column: 1 / -1;
+    grid-row: 5;
+  }
 }
 
 .formacao {
@@ -370,6 +469,24 @@ h1 {
   color: #bb6ca2;
 }
 
+@media (max-width: 50rem) {
+  .formacao-content > p {
+    font-size: 1.125rem;
+    max-width: auto;
+    margin-bottom: 1.875rem;
+  }
+
+  .formacao-content {
+    grid-template-columns: 1fr;
+    padding-block: 3.75rem;
+    gap: 1.25rem;
+  }
+
+  .formacao-list {
+    grid-template-columns: 1fr;
+  }
+}
+
 .footer {
   background-color: #380b2a;
 }
@@ -430,4 +547,56 @@ h1 {
   position: absolute;
   top: -55px;
   left: 30px;
+}
+
+@media (max-width: 50rem) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    padding-top: 3.75rem;
+    padding-bottom: 1rem;
+  }
+
+  .footer-content > p {
+    font-size: 1.125rem;
+    max-width: auto;
+    margin-bottom: 1.875rem;
+  }
+
+  .contato {
+    gap: 1.25rem;
+  }
+
+  .contato a {
+    font-size: 1.125rem;
+  }
+
+  .footer-content::after {
+    background: url("../img/icon/AR_mobile.svg") no-repeat center;
+    left: -30px;
+  }
+
+  .footer-content .copy {
+    grid-column: 1/-1;
+    font-size: 0.875rem;
+    margin-top: 3.25rem;
+    margin-bottom: 0;
+  }
+}
+
+.text-decoretion-mobile {
+  display: none;
+  font-size: 2rem;
+  font-family: "Limelight", serif;
+  font-weight: 400;
+  line-height: 2.25rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 50rem) {
+  .text-decoretion {
+    display: none;
+  }
+  .text-decoretion-mobile {
+    display: block;
+  }
 }
